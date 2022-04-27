@@ -14,6 +14,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func botonGris(_ sender: Any) {
+        print("Soy el boton gris")
+    }
+    
+    @IBAction func botonRosa(_ sender: Any) {
+        print("Soy el boton Rosa")
+    }
+    
+    @IBAction func botonPlomo(_ sender: Any) {
+        print("Soy el boton plomo")
+    }
 }
 

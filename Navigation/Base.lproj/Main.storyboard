@@ -40,6 +40,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="45"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="botonRosa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBh-oB-eT9"/>
                                     <segue destination="H7d-MP-U39" kind="show" id="USL-Jr-0r1"/>
                                 </connections>
                             </button>
@@ -51,6 +52,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="45"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="BotonGris:" destination="BYZ-38-t0r" eventType="touchUpInside" id="po7-uj-Oaf"/>
                                     <segue destination="li6-UW-jNX" kind="show" id="haZ-1l-bdK"/>
                                 </connections>
                             </button>
@@ -62,6 +64,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="45"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="botonPlomo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W1D-x5-7pj"/>
                                     <segue destination="ZLu-rh-E1i" kind="show" id="ne5-Er-8zC"/>
                                 </connections>
                             </button>
