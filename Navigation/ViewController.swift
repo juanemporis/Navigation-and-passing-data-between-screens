@@ -16,14 +16,19 @@ class ViewController: UIViewController {
 
     @IBAction func botonGris(_ sender: Any) {
         print("Soy el boton gris")
+        performSegue(withIdentifier: "vcGris", sender: self)
     }
     
     @IBAction func botonRosa(_ sender: Any) {
         print("Soy el boton Rosa")
+        performSegue(withIdentifier: "vcRosa", sender: self)
+
     }
     
     @IBAction func botonPlomo(_ sender: Any) {
         print("Soy el boton plomo")
+        performSegue(withIdentifier: "vcPlomo", sender: self)
+
     }
 }
 

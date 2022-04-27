@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4g-rV-bPg">
-                                <rect key="frame" x="160" y="434" width="120" height="68"/>
+                                <rect key="frame" x="161" y="414" width="120" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Rosa">
@@ -41,11 +41,10 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="botonRosa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBh-oB-eT9"/>
-                                    <segue destination="H7d-MP-U39" kind="show" id="USL-Jr-0r1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVk-4D-4ZH">
-                                <rect key="frame" x="170" y="255" width="102" height="68"/>
+                                <rect key="frame" x="174" y="211" width="102" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Gris">
@@ -53,11 +52,10 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="BotonGris:" destination="BYZ-38-t0r" eventType="touchUpInside" id="po7-uj-Oaf"/>
-                                    <segue destination="li6-UW-jNX" kind="show" id="haZ-1l-bdK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDh-Lo-YAa">
-                                <rect key="frame" x="151" y="613" width="149" height="68"/>
+                                <rect key="frame" x="151" y="636" width="149" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Plomo">
@@ -65,7 +63,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="botonPlomo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W1D-x5-7pj"/>
-                                    <segue destination="ZLu-rh-E1i" kind="show" id="ne5-Er-8zC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,15 +70,20 @@
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Menú" id="AMQ-A4-8Rz"/>
+                    <connections>
+                        <segue destination="li6-UW-jNX" kind="show" identifier="vcGris" id="x6I-mj-r1e"/>
+                        <segue destination="H7d-MP-U39" kind="show" identifier="vcRosa" id="L2p-zt-j8r"/>
+                        <segue destination="ZLu-rh-E1i" kind="show" identifier="vcPlomo" id="Efa-Qc-bd6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-162.31884057971016" y="101.78571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Gris-->
         <scene sceneID="dXh-1w-Et9">
             <objects>
-                <viewController id="li6-UW-jNX" sceneMemberID="viewController">
+                <viewController id="li6-UW-jNX" customClass="ViewControllerGris" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yIo-e6-9TQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="1461" y="-656"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Rosa-->
         <scene sceneID="Muc-4l-p0s">
             <objects>
-                <viewController id="H7d-MP-U39" sceneMemberID="viewController">
+                <viewController id="H7d-MP-U39" customClass="ViewControllerRosa" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WZi-Yb-lP5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="1460.8695652173915" y="101.78571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Plomo-->
         <scene sceneID="f1h-pe-20Q">
             <objects>
-                <viewController id="ZLu-rh-E1i" sceneMemberID="viewController">
+                <viewController id="ZLu-rh-E1i" customClass="ViewControllerPlomo" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D9o-K4-bnj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
